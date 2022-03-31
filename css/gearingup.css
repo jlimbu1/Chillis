@@ -1,0 +1,25 @@
+@import "./const.css";
+
+header, footer {
+    background-color: var(--starter-color);
+}
+
+.container > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container > ul > li {
+    margin: 0 1vw;
+}
+
+.section > ul > li {
+    padding: 5px;
+}
+.section > ul > li:nth-child(odd) {
+    background-color: var(--primary-highlight);
+}
+.section > ul > li:nth-child(even) {
+    background-color: var(--secondary-highlight);
+}

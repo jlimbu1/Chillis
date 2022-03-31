@@ -1,0 +1,4 @@
+@keyframes slide-in-out {
+    0% { transform: translateX(0); }
+    50% {transform: translateX(10vw);}
+}

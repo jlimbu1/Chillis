@@ -1,0 +1,107 @@
+@import "./const.css";
+@import "./keyframe.css";
+
+header, footer {
+    background-color: var(--main-color);
+    padding: 10px;
+    margin-bottom: 50px;
+}
+img {
+    width: 100%;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+span {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+body {
+    background-color: var(--primary-color);
+    background-image: url(../../assets/chilly.png);
+    margin: 0;
+}
+
+.container {
+    width: 70%;
+    min-width: 750px;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+/* header */
+header {
+    text-align: center;
+}
+
+/* Main Page */
+.dropdown {
+    margin-left: 50px;
+}
+.dropdown img {
+    width: 393px;
+    cursor: pointer;
+}
+.dropdown img:hover {
+    transform: translateY(-10px);
+}
+li:nth-child(1) .dropdown-items li:hover { background-color: var(--starter-color); }
+li:nth-child(2) .dropdown-items li:hover { background-color: var(--gearing-color); }
+li:nth-child(3) .dropdown-items li:hover { background-color: var(--mission-color); }
+li:nth-child(4) .dropdown-items li:hover { background-color: var(--rate-color); }
+li:nth-child(5) .dropdown-items li:hover { background-color: var(--guild-color); }
+li:nth-child(6) .dropdown-items li:hover { background-color: var(--weeklie-color); }
+li:nth-child(7) .dropdown-items li:hover { background-color: var(--farm-color); }
+.dropdown-items {
+    cursor: pointer;
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    border: 5px solid black;
+    border-top: none;
+}
+.dropdown-items li {
+    padding: 5px;
+}
+.dropdown-items li:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+.dropdown-items li:hover {
+    border-radius: 15px;
+}
+
+/* Footer */
+footer {
+    margin: 50px 0 0;
+}
+footer .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer .container > div {
+    flex: 1 1 auto;
+    width: 33%;
+    min-width: none;
+    margin: 0 1vw;
+}
+footer .container div > img {
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+}
+footer .container div h2 {
+    border-bottom: 5px solid var(--primary-text-color);
+}
