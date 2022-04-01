@@ -1,6 +1,6 @@
 @import "./const.css";
 
-header, footer {
+.container {
     background-color: var(--starter-color);
 }
 
@@ -8,6 +8,7 @@ header, footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .container > ul > li {
