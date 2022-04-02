@@ -4,23 +4,25 @@
     background-color: var(--starter-color);
 }
 
-.container > ul {
+.container>ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
-.container > ul > li {
+.container>ul>li {
     margin: 0 1vw;
 }
 
-.section > ul > li {
+.section>ul>li {
     padding: 5px;
 }
-.section > ul > li:nth-child(odd) {
+
+.section>ul>li:nth-child(odd) {
     background-color: var(--primary-highlight);
 }
-.section > ul > li:nth-child(even) {
+
+.section>ul>li:nth-child(even) {
     background-color: var(--secondary-highlight);
 }
