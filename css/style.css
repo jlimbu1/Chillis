@@ -33,6 +33,7 @@ a {
 p {
     text-align: justify;
     text-justify: inter-word;
+    width: 100%;
 }
 
 body {

@@ -1,0 +1,30 @@
+@import "./const.css";
+
+.container {
+    background-color: var(--farm-color);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media all and (max-width: 600px) {
+    .content div, .content img {
+        flex: 1 !important;
+        position: relative;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content div:first-child {
+        min-height: 200px;
+        position: relative;
+    }
+}
