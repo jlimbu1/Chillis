@@ -43,7 +43,7 @@ p {
 }
 
 body {
-    background-image: url(../assets/chilly.png);
+    background-image: url(https://i.imgur.com/Z6CUn1W.png);
     background-color: black;
     margin: 0;
 }
@@ -156,7 +156,7 @@ li:nth-child(8) .dropdown-items li {
 }
 
 li .dropdown-items li:hover {
-    background-image: url(../assets/emote.png);
+    background-image: url(https://i.imgur.com/BpSiHf7.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: 10px;
