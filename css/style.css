@@ -1,5 +1,6 @@
 @import "./const.css";
 @import "./keyframe.css";
+@import "./fonts.css";
 
 header,
 footer {
@@ -8,6 +9,11 @@ footer {
 
 header {
     margin-bottom: 50px;
+}
+
+header img {
+    animation-name: zoom;
+    animation-duration: 1s;
 }
 
 footer {
@@ -26,7 +32,7 @@ img {
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--primary-text-color);
     font-size: 1.5rem;
 }
 
@@ -38,6 +44,7 @@ p {
 
 body {
     background-image: url(../assets/chilly.png);
+    background-color: black;
     margin: 0;
 }
 
@@ -49,13 +56,41 @@ a>li {
     font-weight: 800;
 }
 
+h1,
+h2,
+h3,
+a,
+p,
+span,
+li,
+strong {
+    font-family: 'Now Thin';
+}
+
 .container {
     width: 70%;
     min-width: 750px;
     margin: 0 auto;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
     border-radius: 15px;
     padding: 30px;
+}
+
+.back-icon {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 30px;
+    width: 50px;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.back-icon:hover {
+    transform: translateX(-10px);
 }
 
 /* header */
@@ -68,7 +103,11 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
+}
+
+.main>img {
+    animation: fade-in 4s;
 }
 
 .dropdown {
@@ -83,36 +122,44 @@ header {
     transform: translateY(-10px);
 }
 
-li:nth-child(1) .dropdown-items li:hover {
+li:nth-child(1) .dropdown-items li {
     background-color: var(--starter-color);
+    color: white;
 }
 
-li:nth-child(2) .dropdown-items li:hover {
+li:nth-child(2) .dropdown-items li {
     background-color: var(--gearing-color);
 }
 
-li:nth-child(3) .dropdown-items li:hover {
+li:nth-child(3) .dropdown-items li {
     background-color: var(--mission-color);
 }
 
-li:nth-child(4) .dropdown-items li:hover {
+li:nth-child(4) .dropdown-items li {
     background-color: var(--rate-color);
 }
 
-li:nth-child(5) .dropdown-items li:hover {
+li:nth-child(5) .dropdown-items li {
     background-color: var(--guild-color);
 }
 
-li:nth-child(6) .dropdown-items li:hover {
-    background-color: var(--weeklie-color);
+li:nth-child(6) .dropdown-items li {
+    background-color: var(--raid-color);
 }
 
-li:nth-child(7) .dropdown-items li:hover {
+li:nth-child(7) .dropdown-items li {
     background-color: var(--buff-color);
 }
 
-li:nth-child(8) .dropdown-items li:hover {
+li:nth-child(8) .dropdown-items li {
     background-color: var(--farm-color);
+}
+
+li .dropdown-items li:hover {
+    background-image: url(../assets/emote.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 10px;
 }
 
 .dropdown-items {
@@ -120,13 +167,14 @@ li:nth-child(8) .dropdown-items li:hover {
     display: none;
     margin: 0 auto;
     text-align: center;
-    border-radius: 15px;
-    border: 5px solid black;
     border-top: none;
+    animation: none 0.5s;
 }
 
 .dropdown-items li {
     padding: 5px;
+    margin: 5px 0;
+    border-radius: 15px;
 }
 
 .dropdown-items li:not(:last-child) {

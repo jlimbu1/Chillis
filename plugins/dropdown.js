@@ -13,6 +13,7 @@ function dropdown(num) {
 function display_toggle(item) {
     if (item.style.display === "none" || item.style.display === "") {
         item.style.display = "block";
+        item.style.animationName = "slide-in-out"
     } else {
         item.style.display = "none";
     }

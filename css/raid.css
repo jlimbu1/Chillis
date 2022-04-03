@@ -1,0 +1,5 @@
+@import "./const.css";
+
+.container {
+    background-color: var(--raid-color);
+}

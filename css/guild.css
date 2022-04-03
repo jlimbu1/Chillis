@@ -4,6 +4,10 @@
     background-color: var(--guild-color);
 }
 
+img {
+    height: 100%;
+}
+
 .content {
     display: flex;
     flex-wrap: wrap;
