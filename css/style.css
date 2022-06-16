@@ -65,6 +65,7 @@ span,
 li,
 strong {
     font-family: 'Now Thin';
+    font-weight: 700;
 }
 
 .container {
