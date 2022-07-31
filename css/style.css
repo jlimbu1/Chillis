@@ -141,18 +141,23 @@ li:nth-child(4) .dropdown-items li {
 }
 
 li:nth-child(5) .dropdown-items li {
-    background-color: var(--guild-color);
+    background-color: var(--stats-color);
+    color: white;
 }
 
 li:nth-child(6) .dropdown-items li {
-    background-color: var(--raid-color);
+    background-color: var(--guild-color);
 }
 
 li:nth-child(7) .dropdown-items li {
-    background-color: var(--buff-color);
+    background-color: var(--raid-color);
 }
 
 li:nth-child(8) .dropdown-items li {
+    background-color: var(--buff-color);
+}
+
+li:nth-child(9) .dropdown-items li {
     background-color: var(--farm-color);
 }
 

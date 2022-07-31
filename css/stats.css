@@ -1,0 +1,6 @@
+@import "./const.css";
+
+.container {
+    background-color: var(--stats-color);
+    color: var(--secondary-text-color);
+}
