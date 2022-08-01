@@ -10,6 +10,30 @@
     flex-direction: row;
 }
 
+.container>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.container>ul>li {
+    margin: 0 1vw;
+}
+
+.section>ul>li {
+    padding: 5px;
+    color: black;
+}
+
+.section>ul>li:nth-child(odd) {
+    background-color: var(--primary-highlight);
+}
+
+.section>ul>li:nth-child(even) {
+    background-color: var(--secondary-highlight);
+}
+
 @media all and (max-width: 600px) {
     .content div, .content img {
         flex: 1 !important;

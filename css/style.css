@@ -154,10 +154,14 @@ li:nth-child(7) .dropdown-items li {
 }
 
 li:nth-child(8) .dropdown-items li {
-    background-color: var(--buff-color);
+    background-color: var(--weeklie-color);
 }
 
 li:nth-child(9) .dropdown-items li {
+    background-color: var(--buff-color);
+}
+
+li:nth-child(10) .dropdown-items li {
     background-color: var(--farm-color);
 }
 
