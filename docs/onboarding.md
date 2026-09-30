@@ -41,3 +41,6 @@ shared-shell script while preserving the original look and feel.
 
 - Static files; any static host works (Nginx, GitHub Pages, Netlify, Dokploy).
 - No `.env`, no secrets.
+- **Caching:** Cloudflare fronts the live site and caches `.css`/`.js` for up
+  to 4h. Bump the `?v=N` token on the stylesheet/script references when you
+  change those files (see `AGENTS.md` → “Deploy caching”).

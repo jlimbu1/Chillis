@@ -16,6 +16,14 @@ Project-level rules. Override customer (`../AGENTS.md`) and global rules.
   no per-page CSS files.
 - Follow `.editorconfig` / `.prettierrc` (4 spaces, LF, 100 cols).
 
+## Deploy caching
+
+Cloudflare sits in front of the live site and caches static assets
+(`.css`/`.js`) for up to 4 hours by default. When you change
+`css/style.css` or `js/site.js`, bump the `?v=N` cache-bust token in the
+`<link>`/`<script>` references in `index.html` and every `pages/*.html`,
+then deploy — otherwise the old copy is served until the cache expires.
+
 ## Content
 
 - Game data (drop rates, costs, mechanics) is factual — verify against the
