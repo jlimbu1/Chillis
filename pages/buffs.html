@@ -1,112 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="../assets//logo.png">
-    <title>Dragon Nest Guide</title>
+    <meta name="description" content="Guild, harmony, SOA, Noblesse and rock buffs in Dragon Nest — a Chillis guide page.">
+    <title>Buffs — Chillis Dragon Nest Guide</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem('chillis-theme') || 'dark';
+    </script>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/buff.css">
+    <script src="../js/site.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <h1>Buffs</h1>
-        </div>
-    </header>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Contents -->
-    <div class="container">
-        <ul>
-            <li>
-                <h2>Guild Buffs</h2>
-                <div class="content">
-                    <img src="https://i.imgur.com/tXDfMsah.png" alt="guildbuffs">
-                </div>
-            </li>
-            <li>
-                <h2>Harmony Buffs</h2>
-                <div class="content">
-                    <img src="https://i.imgur.com/RB8GW1eh.png" alt="harmony">
-                </div>
-            </li>
-            <li>
-                <h2>Stone of Alliance(SOA)</h2>
-                <div class="content">
-                    <img src="https://i.imgur.com/Z66fNDV.png" alt="soa">
-                    <p>The SOA buff can be bought for 7500 Guild Coins from the Guild NPC inside the guildbase.</p>
-                </div>
-            </li>
-            <li>
-                <h2>Noblesse Buff</h2>
-                <div class="content">
-                    <img src="https://i.imgur.com/ldvjQw8h.png" alt="nb">
-                    <p>
-                        Noblesse Buff is given to the biggest spender of each month (VVIP3). The NB holder decides
-                        the time and location of buffing once a day, when the buff is used all players in the same
-                        town will receive it. Usually the holder would announce everday the time and location of buff,
-                        you may ask others in chat or on discord servers for NB info if you missed the announcement.
-                        It is ideal to run dungeons, nests, GGC and sunset cloister during this time to recieve
-                        additional loots. (Common time and town of NB buff is during night time GMT8+ 9PM-11PM at Saint
-                        Haven)
-                    </p>
-                </div>
-            </li>
-            <li>
-                <h2>Rock Buffs</h2>
-                <div class="content">
-                    <img src="https://i.imgur.com/SnE9OUsh.png" alt="rockbuffs">
-                </div>
-            </li>
-        </ul>
-    </div>
+    <header id="site-header" class="site-header"></header>
 
-
-    <footer>
-        <div class="container">
-            <div>
-                <h2>About Us</h2>
-                <div class="footer-info">
-                    <img src="https://i.imgur.com/oxMmhVK.png" alt="guildbase" id="guildbase">
-                    <p>
-                        Chillis is a Level 38 International Guild that has members all over from <img
-                            src="https://i.imgur.com/0naAHUo.png" alt="country" style="width: 150px; height: 20px;"> and
-                        more~
-                        We are an extremely driven and active bunch of people, both in-game and on discord. We want to
-                        build a better and strong community for like-minded players. Come meet us in our guild base
-                        located in Channel 13 Wonderful Themepark.
-                    </p>
-                </div>
+    <main id="main">
+        <nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb"></nav>
+        <article class="container guide">
+            <header class="guide-header cat-buffs">
+                <span class="category-label">Buffs</span>
+                <h1>Buffs</h1>
+            </header>
+            <div class="guide-body">
+                <section class="guide-section">
+                    <h2>Guild Buffs</h2>
+                    <img src="https://i.imgur.com/tXDfMsah.png" alt="Guild buffs" loading="lazy" decoding="async">
+                </section>
+                <section class="guide-section">
+                    <h2>Harmony Buffs</h2>
+                    <img src="https://i.imgur.com/RB8GW1eh.png" alt="Harmony buffs" loading="lazy" decoding="async">
+                </section>
+                <section class="guide-section">
+                    <h2>Stone of Alliance (SOA)</h2>
+                    <div class="media">
+                        <img src="https://i.imgur.com/Z66fNDV.png" alt="Stone of Alliance" loading="lazy" decoding="async">
+                        <p class="media-body">The SOA buff can be bought for 7,500 Guild Coins from the Guild NPC inside the guild base.</p>
+                    </div>
+                </section>
+                <section class="guide-section">
+                    <h2>Noblesse Buff</h2>
+                    <div class="media">
+                        <img src="https://i.imgur.com/ldvjQw8h.png" alt="Noblesse Buff" loading="lazy" decoding="async">
+                        <div class="media-body">
+                            <p>Noblesse Buff is given to the biggest spender of each month (VVIP3). The NB holder decides the time and location of buffing once a day; when the buff is used, all players in the same town will receive it. Usually the holder will announce every day the time and location of the buff — you may ask others in chat or on Discord servers for NB info if you missed the announcement.</p>
+                            <p>It is ideal to run dungeons, nests, GGC and Sunset Coliseum during this time to receive additional loot. (Common time and town for the NB buff is during night time GMT+8, 9PM–11PM at Saint Haven.)</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="guide-section">
+                    <h2>Rock Buffs</h2>
+                    <img src="https://i.imgur.com/SnE9OUsh.png" alt="Rock buffs" loading="lazy" decoding="async">
+                </section>
             </div>
-            <div>
-                <h2>Contact Us</h2>
-                <ul style="float: left; margin-right: 3vw;">
-                    <li><strong style="font-size: 120%;">Discord:</strong></li>
-                    <li><strong>GM:</strong> imfiar#5818</li>
-                    <li><strong>VGM:</strong> rae#0738</li>
-                    <li><strong>VGM:</strong> Kiritoislegit1#6618</li>
-                    <li><strong>VGM:</strong> PutetoN™#8592</li>
-                    <li><strong>VGM:</strong> Chu#1269</li>
-                    <li><strong>VGM:</strong> Cheng#6879</li>
-                    <li><strong>VGM:</strong> cecilus#8123</li>
-                </ul>
-                <ul>
-                    <li><strong style="font-size: 120%;">In-Game:</strong></li>
-                    <li><strong>GM:</strong> Jyuyu</li>
-                    <li><strong>VGM:</strong> Rissuu</li>
-                    <li><strong>VGM:</strong> MisakiEn</li>
-                    <li><strong>VGM:</strong> D3mokrasya</li>
-                    <li><strong>VGM:</strong> NicoleJash</li>
-                    <li><strong>VGM:</strong> xChengLord</li>
-                    <li><strong>VGM:</strong> Cecilus</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+        </article>
+    </main>
 
+    <footer id="site-footer" class="site-footer"></footer>
 </body>
-
 </html>

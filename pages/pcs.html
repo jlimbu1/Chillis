@@ -1,115 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="../assets//logo.png">
-    <title>Dragon Nest Guide</title>
+    <meta name="description" content="Push Crystal Statue and Alliance Jade in Dragon Nest — a Chillis guide page.">
+    <title>Push Crystal Statue — Chillis Dragon Nest Guide</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem('chillis-theme') || 'dark';
+    </script>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/guild.css">
+    <script src="../js/site.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <h1>Push Crystal Statue!</h1>
-        </div>
-    </header>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Contents -->
-    <div class="container">
-        <ul>
-            <li>
-                <h2>Push Crystal Statue!</h2>
-                <div class="content">
-                    <p>
-                        How the hell do people get so much HP, you wonder? No worries, the Alliance Jade is here to
-                        rescue!
-                    </p>
-                    <img src="https://i.imgur.com/x6gzMBnh.png" alt="ALLYMEME">
-                    <p>
-                        Push Crystal Statue (PCS) is a special Guild-only instance that drops Alliance Crystals, which
-                        are used to craft and enhance Alliance Jade at the Blacksmith.
-                    </p>
-                    <img src="https://i.imgur.com/zr9DaZrh.png" alt="pcsportal">
-                    <p>
-                    <ul>
-                        <li><strong>Requirements to run PCS</strong></li>
-                        <li>1) Party of 6 people, all guild members</li>
-                        <li>2)There is <strong>NO TICKET</strong> for PCS, you can run it freely with your guild
-                            members!</li>
-                        <li>3) Can only be ran once a week, however can retry infinite times if fail</li>
-                    </ul>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <h2>Alliance Jade</h2>
-                <div class="content">
-                    <p>
-                        The Alliance Jade is a Dragon Jade that can only be equipped on Armors, and is one of the main
-                        reasons why you see some people having ALOT of HP and taking much more hits from bosses. However
-                        it isn't seen as very good to use until it is +12.
-                    </p>
-                    <img src="https://i.imgur.com/VFIubVXh.png" alt="allycraft">
-                    <img src="https://i.imgur.com/IvGHHafh.png" alt="allychart">
-                </div>
-            </li>
-            <li>
-                <h2>PCS Introduction Video</h2>
-                <div class="content">
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/k7_GkdDnl4U">
-                    </iframe>
-                </div>
-            </li>
-        </ul>
-    </div>
+    <header id="site-header" class="site-header"></header>
 
-
-    <footer>
-        <div class="container">
-            <div>
-                <h2>About Us</h2>
-                <div class="footer-info">
-                    <img src="https://i.imgur.com/oxMmhVK.png" alt="guildbase" id="guildbase">
-                    <p>
-                        Chillis is a Level 38 International Guild that has members all over from <img
-                            src="https://i.imgur.com/0naAHUo.png" alt="country" style="width: 150px; height: 20px;"> and
-                        more~
-                        We are an extremely driven and active bunch of people, both in-game and on discord. We want to
-                        build a better and strong community for like-minded players. Come meet us in our guild base
-                        located in Channel 13 Wonderful Themepark.
-                    </p>
-                </div>
+    <main id="main">
+        <nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb"></nav>
+        <article class="container guide">
+            <header class="guide-header cat-guild">
+                <span class="category-label">Guild</span>
+                <h1>Push Crystal Statue</h1>
+            </header>
+            <div class="guide-body">
+                <section class="guide-section">
+                    <h2>Push Crystal Statue!</h2>
+                    <p>How the hell do people get so much HP, you wonder? No worries, the Alliance Jade is here to rescue!</p>
+                    <img src="https://i.imgur.com/x6gzMBnh.png" alt="Alliance Jade meme" loading="lazy" decoding="async">
+                    <p>Push Crystal Statue (PCS) is a special Guild-only instance that drops Alliance Crystals, which are used to craft and enhance Alliance Jade at the Blacksmith.</p>
+                    <img src="https://i.imgur.com/zr9DaZrh.png" alt="PCS portal" loading="lazy" decoding="async">
+                    <h3>Requirements to run PCS</h3>
+                    <ol>
+                        <li>A party of 6 people, all guild members.</li>
+                        <li>There is <strong>NO TICKET</strong> for PCS — you can run it freely with your guild members!</li>
+                        <li>It can only be run once a week; however, you can retry infinitely if you fail.</li>
+                    </ol>
+                </section>
+                <section class="guide-section">
+                    <h2>Alliance Jade</h2>
+                    <p>The Alliance Jade is a Dragon Jade that can only be equipped on Armor, and is one of the main reasons why you see some people having A LOT of HP and taking many more hits from bosses. However, it isn't seen as very good to use until it is +12.</p>
+                    <div class="media">
+                        <img src="https://i.imgur.com/VFIubVXh.png" alt="Alliance Jade crafting" loading="lazy" decoding="async">
+                        <img src="https://i.imgur.com/IvGHHafh.png" alt="Alliance Jade chart" loading="lazy" decoding="async">
+                    </div>
+                </section>
+                <section class="guide-section">
+                    <h2>PCS Introduction Video</h2>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/k7_GkdDnl4U" title="Push Crystal Statue introduction video" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                </section>
             </div>
-            <div>
-                <h2>Contact Us</h2>
-                <ul style="float: left; margin-right: 3vw;">
-                    <li><strong style="font-size: 120%;">Discord:</strong></li>
-                    <li><strong>GM:</strong> imfiar#5818</li>
-                    <li><strong>VGM:</strong> rae#0738</li>
-                    <li><strong>VGM:</strong> Kiritoislegit1#6618</li>
-                    <li><strong>VGM:</strong> PutetoN™#8592</li>
-                    <li><strong>VGM:</strong> Chu#1269</li>
-                    <li><strong>VGM:</strong> Cheng#6879</li>
-                    <li><strong>VGM:</strong> cecilus#8123</li>
-                </ul>
-                <ul>
-                    <li><strong style="font-size: 120%;">In-Game:</strong></li>
-                    <li><strong>GM:</strong> Jyuyu</li>
-                    <li><strong>VGM:</strong> Rissuu</li>
-                    <li><strong>VGM:</strong> MisakiEn</li>
-                    <li><strong>VGM:</strong> D3mokrasya</li>
-                    <li><strong>VGM:</strong> NicoleJash</li>
-                    <li><strong>VGM:</strong> xChengLord</li>
-                    <li><strong>VGM:</strong> Cecilus</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+        </article>
+    </main>
 
+    <footer id="site-footer" class="site-footer"></footer>
 </body>
-
 </html>

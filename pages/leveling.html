@@ -1,144 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="../assets//logo.png">
-    <title>Dragon Nest Guide</title>
+    <meta name="description" content="How to level up fast in Dragon Nest — a Chillis guide page.">
+    <title>Leveling Up — Chillis Dragon Nest Guide</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem('chillis-theme') || 'dark';
+    </script>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/getstarted.css">
+    <script src="../js/site.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <h1>Leveling Up</h1>
-        </div>
-    </header>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Contents -->
-    <div class="container">
-        <div class="content">
-            <h2>Leveling with main quest</h2>
-            <ul>
-                <li>
-                    <p>
-                        1. Leveling become super easy because the EXP is consistent from lvl 1 to 95 (10.000 EXP for
-                        level
-                        up), it takes around 3-5 hours total.
-                    </p>
-                </li>
+    <header id="site-header" class="site-header"></header>
 
-                <li>
-                    <p>
-                        2. Only main quest can give you EXP (sometimes you don't have to clear the dungeon for the
-                        quest),
-                        clearng the quest gives you 600 ftg.
-                    </p>
-                </li>
-
-                <li>
-                    <p>
-                        3. Side quest does not give you EXP (but they give you jelly, useful for 95 later)
-                    </p>
-                </li>
-
-                <li>
-                    <p>
-                        4. It doesn't matter what difficulty you choose, the exp given from dungeon is only 1% (more on
-                        higher difficulty)
-                    </p>
-                </li>
-
-                <li>
-                    <p>
-                        5. Right at the start use the laugh gesture then equip the ring to get the newbie growth
-                        costume.
-                    </p>
-                    <img src="https://i.imgur.com/pQErr41.png" alt="laugh">
-                    <img src="https://i.imgur.com/9Jgshpe.png" alt="newbie_costume">
-                </li>
-
-                <li>
-                    <p>
-                        6. There is possibility you can reach 95 but the main quest is still going (my cases is i reach
-                        95
-                        when my main quest is still lvl 70)
-                    </p>
-                </li>
-            </ul>
-        </div>
-        <div class="content">
-            <h2>Leveling with Sparta Goblin</h2>
-            <ul>
-                <li>
-                    <p>
-                        If you have BST points to spare, you could opt for leveling using the Sparta Goblins.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Ticket for the Sparta Goblin can be purchased from the BST store.
-                    </p>
-                    <img src="https://i.imgur.com/VYrJSfB.png" alt="goblin_tix">
-                </li>
-                <li>
-                    <p>
-                        The Sparta Goblin portal is inside the Wonderful Themepark portal. The exp given by the Sparta
-                        Goblin depends on the difficulty level, but make sure to pick a difficulty that is approriate
-                        for your gear (usually LB 1/2).
-                    </p>
-                    <img src="https://i.imgur.com/KTnD0Rt.png" alt="sparta_goblin">
-                </li>
-            </ul>
-        </div>
-    </div>
-
-
-    <footer>
-        <div class="container">
-            <div>
-                <h2>About Us</h2>
-                <div class="footer-info">
-                    <img src="https://i.imgur.com/oxMmhVK.png" alt="guildbase" id="guildbase">
-                    <p>
-                        Chillis is a Level 38 International Guild that has members all over from <img
-                            src="https://i.imgur.com/0naAHUo.png" alt="country" style="width: 150px; height: 20px;"> and
-                        more~
-                        We are an extremely driven and active bunch of people, both in-game and on discord. We want to
-                        build a better and strong community for like-minded players. Come meet us in our guild base
-                        located in Channel 13 Wonderful Themepark.
-                    </p>
-                </div>
+    <main id="main">
+        <nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb"></nav>
+        <article class="container guide">
+            <header class="guide-header cat-getting-started">
+                <span class="category-label">Getting Started</span>
+                <h1>Leveling Up</h1>
+            </header>
+            <div class="guide-body">
+                <section class="guide-section">
+                    <h2>Leveling with main quest</h2>
+                    <ol>
+                        <li>Leveling becomes super easy because the EXP is consistent from level 1 to 95 (10,000 EXP for each level up). It takes around 3–5 hours total.</li>
+                        <li>Only main quests give you EXP (sometimes you don't have to clear the dungeon for the quest). Clearing the quest gives you 600 FTG.</li>
+                        <li>Side quests do not give EXP (but they give jelly, useful for level 95 later).</li>
+                        <li>It doesn't matter what difficulty you choose — the EXP given from a dungeon is only 1% (more on higher difficulty).</li>
+                        <li>Right at the start, use the laugh gesture then equip the ring to get the newbie growth costume.
+                            <div class="media">
+                                <img src="https://i.imgur.com/pQErr41.png" alt="Laugh gesture" loading="lazy" decoding="async">
+                                <img src="https://i.imgur.com/9Jgshpe.png" alt="Newbie growth costume" loading="lazy" decoding="async">
+                            </div>
+                        </li>
+                        <li>It is possible to reach 95 while the main quest is still going (in my case I reached 95 when my main quest was still level 70).</li>
+                    </ol>
+                </section>
+                <section class="guide-section">
+                    <h2>Leveling with Sparta Goblin</h2>
+                    <div class="media">
+                        <div class="media-body">
+                            <p>If you have BST points to spare, you could opt for leveling using the Sparta Goblins.</p>
+                            <p>Tickets for the Sparta Goblin can be purchased from the BST store.</p>
+                            <p>The Sparta Goblin portal is inside the Wonderful Themepark portal. The EXP given by the Sparta Goblin depends on the difficulty level, but make sure to pick a difficulty that is appropriate for your gear (usually LB 1/2).</p>
+                        </div>
+                        <figure>
+                            <img src="https://i.imgur.com/VYrJSfB.png" alt="Sparta Goblin ticket" loading="lazy" decoding="async">
+                            <figcaption>Sparta Goblin ticket</figcaption>
+                        </figure>
+                    </div>
+                    <figure>
+                        <img src="https://i.imgur.com/KTnD0Rt.png" alt="Sparta Goblin" loading="lazy" decoding="async">
+                        <figcaption>Sparta Goblin</figcaption>
+                    </figure>
+                </section>
             </div>
-            <div>
-                <h2>Contact Us</h2>
-                <ul style="float: left; margin-right: 3vw;">
-                    <li><strong style="font-size: 120%;">Discord:</strong></li>
-                    <li><strong>GM:</strong> imfiar#5818</li>
-                    <li><strong>VGM:</strong> rae#0738</li>
-                    <li><strong>VGM:</strong> Kiritoislegit1#6618</li>
-                    <li><strong>VGM:</strong> PutetoN™#8592</li>
-                    <li><strong>VGM:</strong> Chu#1269</li>
-                    <li><strong>VGM:</strong> Cheng#6879</li>
-                    <li><strong>VGM:</strong> cecilus#8123</li>
-                </ul>
-                <ul>
-                    <li><strong style="font-size: 120%;">In-Game:</strong></li>
-                    <li><strong>GM:</strong> Jyuyu</li>
-                    <li><strong>VGM:</strong> Rissuu</li>
-                    <li><strong>VGM:</strong> MisakiEn</li>
-                    <li><strong>VGM:</strong> D3mokrasya</li>
-                    <li><strong>VGM:</strong> NicoleJash</li>
-                    <li><strong>VGM:</strong> xChengLord</li>
-                    <li><strong>VGM:</strong> Cecilus</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+        </article>
+    </main>
 
+    <footer id="site-footer" class="site-footer"></footer>
 </body>
-
 </html>

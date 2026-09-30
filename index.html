@@ -1,207 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="./assets//logo.png">
-    <title>Dragon Nest Guide</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./plugins/dropdown.js"></script>
+    <meta name="description" content="Chillis — a Dragon Nest community guide covering leveling, gear, raids, nests, buffs, farming and more.">
+    <title>Chillis — Dragon Nest Guide</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem('chillis-theme') || 'dark';
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/site.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <img src="https://i.imgur.com/ZdqGReL.png" alt="header">
-        </div>
-    </header>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Contents -->
-    <div class="container main">
-        <img src="https://i.imgur.com/M65CabP.png" alt="guildphoto">
-        <ul class="main-menu">
-            <li class="dropdown">
-                <img id="gettingstarted" src="https://i.imgur.com/IsaxemR.png" alt="gettingstarted"
-                    onclick="dropdown(1)">
-                <ul class="dropdown-items" id="items1">
-                    <a href="./pages/acronyms.html">
-                        <li>General Acronyms</li>
-                    </a>
-                    <a href="./pages/leveling.html">
-                        <li>Leveling Up</li>
-                    </a>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <img id="gearingup" src="https://i.imgur.com/zRb53f0.png" alt="gearingup" onclick="dropdown(2)">
-                <ul class="dropdown-items" id="items2">
-                    <a href="./pages/gold.html">
-                        <li>Gold Farming</li>
-                    </a>
-                    <a href="./pages/gears.html">
-                        <li>Gears(In-Progress)</li>
-                    </a>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <img id="missions" src="https://i.imgur.com/Xk7RzFs.png" alt="missions" onclick="dropdown(3)">
-                <ul class="dropdown-items" id="items3">
-                    <a href="./pages/board.html">
-                        <li>Mission Board</li>
-                    </a>
-                    <a href="./pages/invaders.html">
-                        <li>Invaders</li>
-                    </a>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <img id="rates" src="https://i.imgur.com/Ng15CTT.png" alt="rates" onclick="dropdown(4)">
-                <ul class="dropdown-items" id="items4">
-                    <a href="./pages/accessory.html">
-                        <li>Accessory</li>
-                    </a>
-                    <a href="./pages/armor.html">
-                        <li>Armor</li>
-                    </a>
-                    <a href="./pages/weapon.html">
-                        <li>Weapon</li>
-                    </a>
-                    <a href="./pages/jade.html">
-                        <li>Jade</li>
-                    </a>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <img id="rates" src="https://i.imgur.com/evV45YU.png" alt="rates" onclick="dropdown(5)">
-                <ul class="dropdown-items" id="items5">
-                    <a href="./pages/penalty.html">
-                        <li>Labyrinth Penalty</li>
-                    </a>
-                    <a href="./pages/runes.html">
-                        <li>Runes</li>
-                    </a>
-                    <a href="./pages/conversion.html">
-                        <li>Conversion</li>
-                    </a>
-                    <a href="./pages/talisman.html">
-                        <li>Talisman</li>
-                    </a>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <img id="guild" src="https://i.imgur.com/5O6ox8T.png" alt="guild" onclick="dropdown(6)">
-                <ul class="dropdown-items" id="items6">
-                    <a href="./pages/gmissions.html">
-                        <li>Guild Missions</li>
-                    </a>
-                    <a href="./pages/conquest.html">
-                        <li>Conquest</li>
-                    </a>
-                    <a href="./pages/pcs.html">
-                        <li>Push Crystal Statue!</li>
-                    </a>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <img id="raid" src="https://i.imgur.com/7fgoshN.png" alt="raid" onclick="dropdown(7)">
-                <ul class="dropdown-items" id="items7">
-                    <a href="./pages/tdn.html">
-                        <li>PTN/TDN/TTN</li>
-                    </a>
-                    <a href="./pages/ddn.html">
-                        <li>DDN</li>
-                    </a>
-                    <a href="./pages/fdn.html">
-                        <li>FDN/FDNHC</li>
-                    </a>
-                    <a href="./pages/gudn.html">
-                        <li>GUDN/GUDNHC</li>
-                    </a>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <img id="buffs" src="https://i.imgur.com/nZBudUi.png" alt="weeklie" onclick="dropdown(8)">
-                <ul class="dropdown-items" id="items8">
-                    <a href="./pages/frozennest.html">
-                        <li>Frozen Nest</li>
-                    </a>
-                    <a href="./pages/fm.html">
-                        <li>Fission Maze</li>
-                    </a>
-                    <a href="./pages/fnm.html">
-                        <li>Frozen Nightmare</li>
-                    </a>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <img id="buffs" src="https://i.imgur.com/LUFKRW7.png" alt="buffs" onclick="dropdown(9)">
-                <ul class="dropdown-items" id="items9">
-                    <a href="./pages/adaptability.html">
-                        <li>Frozen Adaptability</li>
-                    </a>
-                    <a href="./pages/buffs.html">
-                        <li>Buffs</li>
-                    </a>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <img id="farmhotspring" src="https://i.imgur.com/nXM6Lsd.png" alt="farmhotspring" onclick="dropdown(10)">
-                <ul class="dropdown-items" id="items10">
-                    <a href="./pages/farm.html">
-                        <li>Farm/Cook/Fish/</li>
-                    </a>
-                    <a href="./pages/hotspring.html">
-                        <li>Hot Spring</li>
-                    </a>
-                </ul>
-            </li>
-        </ul>
-    </div>
+    <header id="site-header" class="site-header"></header>
 
-    <footer>
-        <div class="container">
-            <div>
-                <h2>About Us</h2>
-                <div class="footer-info">
-                    <img src="https://i.imgur.com/oxMmhVK.png" alt="guildbase" id="guildbase">
-                    <p>
-                        Chillis is a Level 38 International Guild that has members all over from <img
-                            src="https://i.imgur.com/0naAHUo.png" alt="country" style="width: 150px; height: 20px;"> and
-                        more~
-                        We are an extremely driven and active bunch of people, both in-game and on discord. We want to
-                        build a better and strong community for like-minded players. Come meet us in our guild base
-                        located in Channel 13 Wonderful Themepark.
-                    </p>
-                </div>
-            </div>
-            <div>
-                <h2>Contact Us</h2>
-                <ul style="float: left; margin-right: 3vw;">
-                    <li><strong style="font-size: 120%;">Discord:</strong></li>
-                    <li><strong>GM:</strong> imfiar#5818</li>
-                    <li><strong>VGM:</strong> rae#0738</li>
-                    <li><strong>VGM:</strong> Kiritoislegit1#6618</li>
-                    <li><strong>VGM:</strong> PutetoN™#8592</li>
-                    <li><strong>VGM:</strong> Chu#1269</li>
-                    <li><strong>VGM:</strong> Cheng#6879</li>
-                    <li><strong>VGM:</strong> cecilus#8123</li>
-                </ul>
-                <ul>
-                    <li><strong style="font-size: 120%;">In-Game:</strong></li>
-                    <li><strong>GM:</strong> Jyuyu</li>
-                    <li><strong>VGM:</strong> Rissuu</li>
-                    <li><strong>VGM:</strong> MisakiEn</li>
-                    <li><strong>VGM:</strong> D3mokrasya</li>
-                    <li><strong>VGM:</strong> NicoleJash</li>
-                    <li><strong>VGM:</strong> xChengLord</li>
-                    <li><strong>VGM:</strong> Cecilus</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+    <main id="main">
+        <section class="home-hero" aria-label="Guide menu">
+            <img class="hero-banner" src="https://i.imgur.com/ZdqGReL.png" alt="Chillis Dragon Nest Guide">
+            <img class="guild-photo" src="https://i.imgur.com/M65CabP.png" alt="Chillis guild photo" loading="lazy" decoding="async">
+            <div class="home-menu" id="home-menu"></div>
+        </section>
+    </main>
 
+    <footer id="site-footer" class="site-footer"></footer>
 </body>
-
 </html>

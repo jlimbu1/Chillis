@@ -1,113 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="../assets//logo.png">
-    <title>Dragon Nest Guide</title>
+    <meta name="description" content="Jade types and upgrade costs in Dragon Nest — a Chillis guide page.">
+    <title>Jade — Chillis Dragon Nest Guide</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem('chillis-theme') || 'dark';
+    </script>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/rate.css">
+    <script src="../js/site.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <h1>Jade</h1>
-        </div>
-    </header>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Contents -->
-    <div class="container">
-        <ul>
-            <li>
-                <h2>Skill Jade (VDJ, BMJ, DDJ)</h2>
-                <div class="content">
-                    <p>(+0 to +10 is 100% success rate for 10k Gold + 40 Cores)</p>
-                    <img src="https://i.imgur.com/K33alB5.png" alt="skill_jade">
-                </div>
-            </li>
-            <li>
-                <h2>Vibrant Jade</h2>
-                <div class="content">
-                    <p>
-                        Vibrant Jade
-                        <ul>
-                            <li>+10 to +15 = 90 Powder | 53 Ingot | 674 Dark Crystal</li>
-                            <li>+15 to +20 = 308 Powder | 177 Ingot | 2279 Dark Crystal</li>
-                        </ul>
-                    </p>
-                    <img src="https://i.imgur.com/SuB2hNM.png" alt="vibrant_jade">
-                    <p>Threatening Jade</p>
-                    <img src="https://i.imgur.com/05BWcof.png" alt="threatening_jade">
-                    <p>Protection Jade</p>
-                    <img src="https://i.imgur.com/m1p6pDx.png" alt="protection_jade">
-                </div>
-            </li>
-            <li>
-                <h2>Allied Life Jade</h2>
-                <div class="content">
-                    <img src="https://i.imgur.com/g4CK03S.png" alt="allied_jade">
-                </div>
-            </li>
-            <li>
-                <h2>Mirage Dragon Jade</h2>
-                <div class="content">
-                    <p>Mirage Jade</p>
-                    <img src="https://i.imgur.com/pPLVAz5.png" alt="mirage_jade">
-                    <p>Moonlight Jade</p>
-                    <img src="https://i.imgur.com/xpXCKXB.png" alt="moonlight_jade">
-                    <p>Aurora Jade</p>
-                    <img src="https://i.imgur.com/RQaFP03.png" alt="aurora_jade">
-                </div>
-            </li>
-        </ul>
-    </div>
+    <header id="site-header" class="site-header"></header>
 
-
-    <footer>
-        <div class="container">
-            <div>
-                <h2>About Us</h2>
-                <div class="footer-info">
-                    <img src="https://i.imgur.com/oxMmhVK.png" alt="guildbase" id="guildbase">
-                    <p>
-                        Chillis is a Level 38 International Guild that has members all over from <img
-                            src="https://i.imgur.com/0naAHUo.png" alt="country" style="width: 150px; height: 20px;"> and
-                        more~
-                        We are an extremely driven and active bunch of people, both in-game and on discord. We want to
-                        build a better and strong community for like-minded players. Come meet us in our guild base
-                        located in Channel 13 Wonderful Themepark.
-                    </p>
-                </div>
+    <main id="main">
+        <nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb"></nav>
+        <article class="container guide">
+            <header class="guide-header cat-rates">
+                <span class="category-label">Rates</span>
+                <h1>Jade</h1>
+            </header>
+            <div class="guide-body">
+                <section class="guide-section">
+                    <h2>Skill Jade (VDJ, BMJ, DDJ)</h2>
+                    <p>+0 to +10 is a 100% success rate for 10k Gold + 40 Cores.</p>
+                    <img src="https://i.imgur.com/K33alB5.png" alt="Skill Jade" loading="lazy" decoding="async">
+                </section>
+                <section class="guide-section">
+                    <h2>Vibrant Jade</h2>
+                    <ul class="data-list">
+                        <li>+10 to +15 = 90 Powder | 53 Ingot | 674 Dark Crystal</li>
+                        <li>+15 to +20 = 308 Powder | 177 Ingot | 2279 Dark Crystal</li>
+                    </ul>
+                    <div class="media">
+                        <figure>
+                            <img src="https://i.imgur.com/SuB2hNM.png" alt="Vibrant Jade" loading="lazy" decoding="async">
+                            <figcaption>Vibrant Jade</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://i.imgur.com/05BWcof.png" alt="Threatening Jade" loading="lazy" decoding="async">
+                            <figcaption>Threatening Jade</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://i.imgur.com/m1p6pDx.png" alt="Protection Jade" loading="lazy" decoding="async">
+                            <figcaption>Protection Jade</figcaption>
+                        </figure>
+                    </div>
+                </section>
+                <section class="guide-section">
+                    <h2>Allied Life Jade</h2>
+                    <img src="https://i.imgur.com/g4CK03S.png" alt="Allied Life Jade" loading="lazy" decoding="async">
+                </section>
+                <section class="guide-section">
+                    <h2>Mirage Dragon Jade</h2>
+                    <div class="media">
+                        <figure>
+                            <img src="https://i.imgur.com/pPLVAz5.png" alt="Mirage Jade" loading="lazy" decoding="async">
+                            <figcaption>Mirage Jade</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://i.imgur.com/xpXCKXB.png" alt="Moonlight Jade" loading="lazy" decoding="async">
+                            <figcaption>Moonlight Jade</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://i.imgur.com/RQaFP03.png" alt="Aurora Jade" loading="lazy" decoding="async">
+                            <figcaption>Aurora Jade</figcaption>
+                        </figure>
+                    </div>
+                </section>
             </div>
-            <div>
-                <h2>Contact Us</h2>
-                <ul style="float: left; margin-right: 3vw;">
-                    <li><strong style="font-size: 120%;">Discord:</strong></li>
-                    <li><strong>GM:</strong> imfiar#5818</li>
-                    <li><strong>VGM:</strong> rae#0738</li>
-                    <li><strong>VGM:</strong> Kiritoislegit1#6618</li>
-                    <li><strong>VGM:</strong> PutetoN™#8592</li>
-                    <li><strong>VGM:</strong> Chu#1269</li>
-                    <li><strong>VGM:</strong> Cheng#6879</li>
-                    <li><strong>VGM:</strong> cecilus#8123</li>
-                </ul>
-                <ul>
-                    <li><strong style="font-size: 120%;">In-Game:</strong></li>
-                    <li><strong>GM:</strong> Jyuyu</li>
-                    <li><strong>VGM:</strong> Rissuu</li>
-                    <li><strong>VGM:</strong> MisakiEn</li>
-                    <li><strong>VGM:</strong> D3mokrasya</li>
-                    <li><strong>VGM:</strong> NicoleJash</li>
-                    <li><strong>VGM:</strong> xChengLord</li>
-                    <li><strong>VGM:</strong> Cecilus</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+        </article>
+    </main>
 
+    <footer id="site-footer" class="site-footer"></footer>
 </body>
-
 </html>

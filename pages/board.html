@@ -1,117 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="../assets//logo.png">
-    <title>Dragon Nest Guide</title>
+    <meta name="description" content="How the Mission Board and BST points work in Dragon Nest — a Chillis guide page.">
+    <title>Mission Board — Chillis Dragon Nest Guide</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem('chillis-theme') || 'dark';
+    </script>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/mission.css">
+    <script src="../js/site.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <h1>Mission Board</h1>
-        </div>
-    </header>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Contents -->
-    <div class="container">
-        <ul>
-            <li>
-                <h2>Mission Board</h2>
-                <div class="content">
-                    <img src="https://i.imgur.com/Nlx3tgdh.png" alt="board">
-                    <p>
-                        The Mission Board is where you can find your missions and can be found at every town. There are
-                        different types of Missions which each give different rewards, and they can be completed by
-                        finishing the designated Nests or Dungeons; however in some cases, the missions may be designated to
-                        a special instance such as Guild Nests.
-    
-                        There can only be a maximum of 6 missions at one time, and deleting a mission will make it go into
-                        cooldown for 20 minutes [Which can be instantly refreshed for Crystal Points.] However upon
-                        completion, the mission will refresh without needing a time interval.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <h2>What are Hero's Blood Sweat Tears? [BST]</h2>
-                <div class="content">
-                    <img src="https://i.imgur.com/FFxhnufh.png" alt="missionboard">
-                    <p>
-                        Blood Sweat Tears [commonly known as BST] are points that you obtain by completing missions that
-                        appear on your Mission Board. These points can be used to buy useful items at the Blood Sweat Tears
-                        Store, which are usually next to Mission Boards. Such examples are at Saint Haven and Red Lotus
-                        Palace Main Street.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <h2>Hero's Blood Sweat Tears Store</h2>
-                <div class="content">
-                    <img src="https://i.imgur.com/pFnvGBGh.png" alt="bst">
-                    <p>
-                        The Blood Sweat Tear Store [BST Store] is where you can exchange your obtained BST points from
-                        missions into several useful items which are not limited to Potential Talisman Slots [Which can be
-                        used to expand your Talisman Slots] , Horn of Life [Extend your minion/pet duration] and many more.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <h2>Mission Types</h2>
-                <div class="content">
-                    <img src="https://i.imgur.com/MAIS9prh.png" alt="tasks">
-                </div>
-            </li>
-        </ul>
-    </div>
+    <header id="site-header" class="site-header"></header>
 
-
-    <footer>
-        <div class="container">
-            <div>
-                <h2>About Us</h2>
-                <div class="footer-info">
-                    <img src="https://i.imgur.com/oxMmhVK.png" alt="guildbase" id="guildbase">
-                    <p>
-                        Chillis is a Level 38 International Guild that has members all over from <img
-                            src="https://i.imgur.com/0naAHUo.png" alt="country" style="width: 150px; height: 20px;"> and
-                        more~
-                        We are an extremely driven and active bunch of people, both in-game and on discord. We want to
-                        build a better and strong community for like-minded players. Come meet us in our guild base
-                        located in Channel 13 Wonderful Themepark.
-                    </p>
-                </div>
+    <main id="main">
+        <nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb"></nav>
+        <article class="container guide">
+            <header class="guide-header cat-missions">
+                <span class="category-label">Missions</span>
+                <h1>Mission Board</h1>
+            </header>
+            <div class="guide-body">
+                <section class="guide-section">
+                    <h2>Mission Board</h2>
+                    <div class="media">
+                        <figure>
+                            <img src="https://i.imgur.com/Nlx3tgdh.png" alt="Mission Board" loading="lazy" decoding="async">
+                        </figure>
+                        <div class="media-body">
+                            <p>The Mission Board is where you can find your missions, and it can be found in every town. There are different types of missions which each give different rewards, and they can be completed by finishing the designated Nests or Dungeons. In some cases, missions may be designated to a special instance such as Guild Nests.</p>
+                            <p>There can only be a maximum of 6 missions at one time, and deleting a mission will put it into cooldown for 20 minutes (which can be instantly refreshed for Crystal Points). Upon completion, however, the mission will refresh without needing a time interval.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="guide-section">
+                    <h2>What are Hero's Blood Sweat Tears? [BST]</h2>
+                    <div class="media">
+                        <figure>
+                            <img src="https://i.imgur.com/FFxhnufh.png" alt="BST points on the Mission Board" loading="lazy" decoding="async">
+                        </figure>
+                        <div class="media-body">
+                            <p>Blood Sweat Tears (commonly known as BST) are points that you obtain by completing missions that appear on your Mission Board. These points can be used to buy useful items at the Blood Sweat Tears Store, which is usually next to Mission Boards. Examples are at Saint Haven and Red Lotus Palace Main Street.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="guide-section">
+                    <h2>Hero's Blood Sweat Tears Store</h2>
+                    <div class="media">
+                        <figure>
+                            <img src="https://i.imgur.com/pFnvGBGh.png" alt="BST Store" loading="lazy" decoding="async">
+                        </figure>
+                        <div class="media-body">
+                            <p>The Blood Sweat Tear Store (BST Store) is where you can exchange the BST points you obtained from missions into several useful items, which are not limited to Potential Talisman Slots (used to expand your Talisman Slots), Horn of Life (extends your minion/pet duration) and many more.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="guide-section">
+                    <h2>Mission Types</h2>
+                    <img src="https://i.imgur.com/MAIS9prh.png" alt="Mission types" loading="lazy" decoding="async">
+                </section>
             </div>
-            <div>
-                <h2>Contact Us</h2>
-                <ul style="float: left; margin-right: 3vw;">
-                    <li><strong style="font-size: 120%;">Discord:</strong></li>
-                    <li><strong>GM:</strong> imfiar#5818</li>
-                    <li><strong>VGM:</strong> rae#0738</li>
-                    <li><strong>VGM:</strong> Kiritoislegit1#6618</li>
-                    <li><strong>VGM:</strong> PutetoN™#8592</li>
-                    <li><strong>VGM:</strong> Chu#1269</li>
-                    <li><strong>VGM:</strong> Cheng#6879</li>
-                    <li><strong>VGM:</strong> cecilus#8123</li>
-                </ul>
-                <ul>
-                    <li><strong style="font-size: 120%;">In-Game:</strong></li>
-                    <li><strong>GM:</strong> Jyuyu</li>
-                    <li><strong>VGM:</strong> Rissuu</li>
-                    <li><strong>VGM:</strong> MisakiEn</li>
-                    <li><strong>VGM:</strong> D3mokrasya</li>
-                    <li><strong>VGM:</strong> NicoleJash</li>
-                    <li><strong>VGM:</strong> xChengLord</li>
-                    <li><strong>VGM:</strong> Cecilus</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+        </article>
+    </main>
 
+    <footer id="site-footer" class="site-footer"></footer>
 </body>
-
 </html>

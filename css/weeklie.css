@@ -1,6 +1,0 @@
-@import "./const.css";
-
-.container {
-    background-color: var(--weeklie-color);
-    color: var(--secondary-text-color);
-}

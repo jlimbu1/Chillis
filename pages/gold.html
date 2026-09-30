@@ -1,99 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="../assets//logo.png">
-    <title>Dragon Nest Guide</title>
+    <meta name="description" content="How to farm gold in Dragon Nest — a Chillis guide page.">
+    <title>Gold Farming — Chillis Dragon Nest Guide</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem('chillis-theme') || 'dark';
+    </script>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/gearing.css">
+    <script src="../js/site.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <h1>Farming Gold</h1>
-        </div>
-    </header>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Contents -->
-    <div class="container">
-        <ul>
-            <li>
-                <h2>Sunset Colister</h2>
-                <p>Using the Sunset Colister Map, you can enter the Sunset Colister located in the Red lotus Palace Main
-                    Street. There are 3 ways to get gold in the sunset colister, selling the sealed skill jades on TH,
-                    selling the Goddess equipments to the NPC and finally getting Gold Goblin.</p>
-                <p>The Goddess equipments sells for ~152 gold each and the Gold Goblins drops ~2000 gold</p>
-                <img src="https://i.imgur.com/7zieC0j.png" alt="sunsetDrops">
-                <img src="https://i.imgur.com/7BzHrIr.png" alt="goldGoblin">
-            </li>
-            <li>
-                <h2>Mission Boards</h2>
-                <p>Doing special missions(Plunder, Coop, Alliance, Target, Counterattack, Treasure, Mining, Front
-                    Breakthrough) grants you 305g for completing them. It is recommended to run on multiple sub accounts
-                    to maximize the daily 3600 FTG given to every character. Doing this also allows you to sell those
-                    special missions to other players such as Coop, Alliance, Plunder, and Guild missions for additional
-                    gold.</p>
-                <p>Example: <img src="https://i.imgur.com/qh2uvHv.png" alt="sellMission"> (The prices for missions varies)</p>
-                <p>Another way of farming gold through mission board is by Tomb Hunting. To get the tomb invader it is
-                    recommended that you have general mission for that specific dungeon to increase the chance of its
-                    appearence. The tomb invader drops a random skill jade and the fragments dropped could be used to
-                    craft sealed skill jades to sell.</p>
-                <img src="https://i.imgur.com/vOAhqQE.png" alt="tombDrops">
-            </li>
-            <li>
-                <h2>Gold Goblin Coins</h2>
-                <p>The GGC drop rate is currently 0.3% but will be increased to 1.8% in the future patch. In a normal run it should grant you 6000+ gold</p>
-                <img src="https://i.imgur.com/XHEzHzY.png" alt="ggc">
-            </li>
-        </ul>
-    </div>
+    <header id="site-header" class="site-header"></header>
 
-    <footer>
-        <div class="container">
-            <div>
-                <h2>About Us</h2>
-                <div class="footer-info">
-                    <img src="https://i.imgur.com/oxMmhVK.png" alt="guildbase" id="guildbase">
-                    <p>
-                        Chillis is a Level 38 International Guild that has members all over from <img
-                            src="https://i.imgur.com/0naAHUo.png" alt="country" style="width: 150px; height: 20px;"> and
-                        more~
-                        We are an extremely driven and active bunch of people, both in-game and on discord. We want to
-                        build a better and strong community for like-minded players. Come meet us in our guild base
-                        located in Channel 13 Wonderful Themepark.
-                    </p>
-                </div>
+    <main id="main">
+        <nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb"></nav>
+        <article class="container guide">
+            <header class="guide-header cat-gearing-up">
+                <span class="category-label">Gearing Up</span>
+                <h1>Gold Farming</h1>
+            </header>
+            <div class="guide-body">
+                <section class="guide-section">
+                    <h2>Sunset Coliseum</h2>
+                    <p>Using the Sunset Coliseum Map, you can enter the Sunset Coliseum located in Red Lotus Palace Main Street. There are 3 ways to get gold in the Sunset Coliseum: selling the sealed skill jades on the Trading House, selling the Goddess equipment to the NPC, and finally getting Gold Goblins.</p>
+                    <p>The Goddess equipment sells for ~152 gold each and the Gold Goblins drop ~2000 gold.</p>
+                    <div class="media">
+                        <img src="https://i.imgur.com/7zieC0j.png" alt="Sunset Coliseum drops" loading="lazy" decoding="async">
+                        <img src="https://i.imgur.com/7BzHrIr.png" alt="Gold Goblin" loading="lazy" decoding="async">
+                    </div>
+                </section>
+                <section class="guide-section">
+                    <h2>Mission Boards</h2>
+                    <p>Doing special missions (Plunder, Coop, Alliance, Target, Counterattack, Treasure, Mining, Front Breakthrough) grants you 305g for completing them. It is recommended to run on multiple sub accounts to maximize the daily 3600 FTG given to every character. Doing this also allows you to sell those special missions to other players such as Coop, Alliance, Plunder, and Guild missions for additional gold.</p>
+                    <figure>
+                        <img src="https://i.imgur.com/qh2uvHv.png" alt="Selling a mission" loading="lazy" decoding="async">
+                        <figcaption>Example of a mission sold on the Trading House (prices vary)</figcaption>
+                    </figure>
+                    <p>Another way of farming gold through the mission board is by Tomb Hunting. To get the tomb invader, it is recommended that you have a general mission for that specific dungeon to increase the chance of its appearance. The tomb invader drops a random skill jade, and the fragments dropped can be used to craft sealed skill jades to sell.</p>
+                    <img src="https://i.imgur.com/vOAhqQE.png" alt="Tomb invader drops" loading="lazy" decoding="async">
+                </section>
+                <section class="guide-section">
+                    <h2>Gold Goblin Coins</h2>
+                    <p>The GGC drop rate is currently 0.3% but will be increased to 1.8% in a future patch. In a normal run it should grant you 6000+ gold.</p>
+                    <img src="https://i.imgur.com/XHEzHzY.png" alt="Gold Goblin Coin" loading="lazy" decoding="async">
+                </section>
             </div>
-            <div>
-                <h2>Contact Us</h2>
-                <ul style="float: left; margin-right: 3vw;">
-                    <li><strong style="font-size: 120%;">Discord:</strong></li>
-                    <li><strong>GM:</strong> imfiar#5818</li>
-                    <li><strong>VGM:</strong> rae#0738</li>
-                    <li><strong>VGM:</strong> Kiritoislegit1#6618</li>
-                    <li><strong>VGM:</strong> PutetoN™#8592</li>
-                    <li><strong>VGM:</strong> Chu#1269</li>
-                    <li><strong>VGM:</strong> Cheng#6879</li>
-                    <li><strong>VGM:</strong> cecilus#8123</li>
-                </ul>
-                <ul>
-                    <li><strong style="font-size: 120%;">In-Game:</strong></li>
-                    <li><strong>GM:</strong> Jyuyu</li>
-                    <li><strong>VGM:</strong> Rissuu</li>
-                    <li><strong>VGM:</strong> MisakiEn</li>
-                    <li><strong>VGM:</strong> D3mokrasya</li>
-                    <li><strong>VGM:</strong> NicoleJash</li>
-                    <li><strong>VGM:</strong> xChengLord</li>
-                    <li><strong>VGM:</strong> Cecilus</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+        </article>
+    </main>
 
+    <footer id="site-footer" class="site-footer"></footer>
 </body>
-
 </html>

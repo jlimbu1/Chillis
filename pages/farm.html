@@ -1,124 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="../assets//logo.png">
-    <title>Dragon Nest Guide</title>
+    <meta name="description" content="Farming, cooking and fishing drop rates in Dragon Nest — a Chillis guide page.">
+    <title>Farm / Cook / Fish — Chillis Dragon Nest Guide</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem('chillis-theme') || 'dark';
+    </script>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/farm.css">
+    <script src="../js/site.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <h1>Farm/Cook/Fish</h1>
-        </div>
-    </header>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Contents -->
-    <div class="container">
-        <img src="https://i.imgur.com/pCRBcPG.png" alt="farmexample">
-        <div class="section">
-            <h2>Fishing Drop Rates</h2>
-            <ul>
-                <li>
-                    <p>Red Bass = 7.7%</p>
-                </li>
-                <li>
-                    <p>Hermalte Trout = 7.7%</p>
-                </li>
-                <li>
-                    <p>Brown Striped Salmon = 7.7%</p>
-                </li>
-                <li>
-                    <p>Rough Rock Grouper = 7.7%</p>
-                </li>
-                <li>
-                    <p>Freshwater Sweet fish = 7.7%</p>
-                </li>
-                <li>
-                    <p>Black Swamp Snake head = 7.7%</p>
-                </li>
-                <li>
-                    <p>Gizzard Shard = 7.7%</p>
-                </li>
-                <li>
-                    <p>Golden Carp = 5.91%</p>
-                </li>
-                <li>
-                    <p>Rainbow Trout = 5.91%</p>
-                </li>
-                <li>
-                    <p>Rosy Bitterling = 5.91%</p>
-                </li>
-                <li>
-                    <p>Catfish = 5.91%</p>
-                </li>
-                <li>
-                    <p>Mudskipper = 5.91%</p>
-                </li>
-                <li>
-                    <p>Lamprey = 0.04%</p>
-                </li>
-                <li>
-                    <p>Arowana = 0.04%</p>
-                </li>
-                <li>
-                    <p>Antique Common Pouch = 17%</p>
-                </li>
-                <li>
-                    <p>Magical Rainbow Goldfish = 0.0044%</p>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <header id="site-header" class="site-header"></header>
 
-
-    <footer>
-        <div class="container">
-            <div>
-                <h2>About Us</h2>
-                <div class="footer-info">
-                    <img src="https://i.imgur.com/oxMmhVK.png" alt="guildbase" id="guildbase">
-                    <p>
-                        Chillis is a Level 38 International Guild that has members all over from <img
-                            src="https://i.imgur.com/0naAHUo.png" alt="country" style="width: 150px; height: 20px;"> and
-                        more~
-                        We are an extremely driven and active bunch of people, both in-game and on discord. We want to
-                        build a better and strong community for like-minded players. Come meet us in our guild base
-                        located in Channel 13 Wonderful Themepark.
-                    </p>
-                </div>
+    <main id="main">
+        <nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb"></nav>
+        <article class="container guide">
+            <header class="guide-header cat-farm">
+                <span class="category-label">Farm &amp; Hot Spring</span>
+                <h1>Farm / Cook / Fish</h1>
+            </header>
+            <div class="guide-body">
+                <section class="guide-section">
+                    <img src="https://i.imgur.com/pCRBcPG.png" alt="Farm example" loading="lazy" decoding="async">
+                </section>
+                <section class="guide-section">
+                    <h2>Fishing Drop Rates</h2>
+                    <ul class="data-list">
+                        <li><strong>Red Bass</strong> — 7.7%</li>
+                        <li><strong>Hermalte Trout</strong> — 7.7%</li>
+                        <li><strong>Brown Striped Salmon</strong> — 7.7%</li>
+                        <li><strong>Rough Rock Grouper</strong> — 7.7%</li>
+                        <li><strong>Freshwater Sweetfish</strong> — 7.7%</li>
+                        <li><strong>Black Swamp Snakehead</strong> — 7.7%</li>
+                        <li><strong>Gizzard Shard</strong> — 7.7%</li>
+                        <li><strong>Golden Carp</strong> — 5.91%</li>
+                        <li><strong>Rainbow Trout</strong> — 5.91%</li>
+                        <li><strong>Rosy Bitterling</strong> — 5.91%</li>
+                        <li><strong>Catfish</strong> — 5.91%</li>
+                        <li><strong>Mudskipper</strong> — 5.91%</li>
+                        <li><strong>Lamprey</strong> — 0.04%</li>
+                        <li><strong>Arowana</strong> — 0.04%</li>
+                        <li><strong>Antique Common Pouch</strong> — 17%</li>
+                        <li><strong>Magical Rainbow Goldfish</strong> — 0.0044%</li>
+                    </ul>
+                </section>
             </div>
-            <div>
-                <h2>Contact Us</h2>
-                <ul style="float: left; margin-right: 3vw;">
-                    <li><strong style="font-size: 120%;">Discord:</strong></li>
-                    <li><strong>GM:</strong> imfiar#5818</li>
-                    <li><strong>VGM:</strong> rae#0738</li>
-                    <li><strong>VGM:</strong> Kiritoislegit1#6618</li>
-                    <li><strong>VGM:</strong> PutetoN™#8592</li>
-                    <li><strong>VGM:</strong> Chu#1269</li>
-                    <li><strong>VGM:</strong> Cheng#6879</li>
-                    <li><strong>VGM:</strong> cecilus#8123</li>
-                </ul>
-                <ul>
-                    <li><strong style="font-size: 120%;">In-Game:</strong></li>
-                    <li><strong>GM:</strong> Jyuyu</li>
-                    <li><strong>VGM:</strong> Rissuu</li>
-                    <li><strong>VGM:</strong> MisakiEn</li>
-                    <li><strong>VGM:</strong> D3mokrasya</li>
-                    <li><strong>VGM:</strong> NicoleJash</li>
-                    <li><strong>VGM:</strong> xChengLord</li>
-                    <li><strong>VGM:</strong> Cecilus</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+        </article>
+    </main>
 
+    <footer id="site-footer" class="site-footer"></footer>
 </body>
-
 </html>
