@@ -1,0 +1,11 @@
+.git
+.DS_Store
+.env
+Dockerfile
+.dockerignore
+.gitignore
+.editorconfig
+.prettierrc
+AGENTS.md
+README.md
+docs/
