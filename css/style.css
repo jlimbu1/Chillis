@@ -151,16 +151,15 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-/* Subtle Dragon Nest texture behind content in dark mode */
+/* Dragon Nest texture behind content — visible in both themes */
 body::before {
     content: '';
     position: fixed;
     inset: 0;
     z-index: -1;
     background-image: url('https://i.imgur.com/Z6CUn1W.png');
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
+    background-repeat: repeat;
+    opacity: 0.18;
     transition: opacity var(--transition);
 }
 
